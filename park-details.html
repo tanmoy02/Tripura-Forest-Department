@@ -69,69 +69,155 @@
           />
         </div>
         <div class="park-details__contents">
-          <h1 class="park-details__name">Shipahijala Wildlife Sanctuary</h1>
-          <div class="park-details__tags"></div>
-          <form class="park-details__star-rating">
-            <input
-              class="radio-input"
-              type="radio"
-              id="star5"
-              name="star-input"
+          <h2 class="park-details__name">Shipahijala Wildlife Sanctuary</h2>
+          <div class="park-details__tags">
+            <p class="park-details__tag">Sanctuary</p>
+            <p class="park-details__tag">Shipahijala District</p>
+          </div>
+          <div class="park-details__rating">
+            <meter
+              class="park-details__rating-star"
+              min="0"
+              max="5"
               value="5"
-            />
-            <label class="radio-label" class for="star5" title="5 stars"
-              >5 stars</label
+              title="5 out of 5 stars"
+              style="--percent: calc(5 / 5 * 100%)"
             >
-
-            <input
-              class="radio-input"
-              type="radio"
-              id="star4"
-              name="star-input"
-              value="4"
-            />
-            <label class="radio-label" for="star4" title="4 stars"
-              >4 stars</label
+              5 out of 5
+            </meter>
+            <a href="#" class="park-details__rating-link">Rate Now</a>
+          </div>
+          <div class="park-details__cta">
+            <div class="park-details__cta-container">
+              <div class="park-details__cta-date-container">
+                <img
+                  src="/assets/images/calendar-icon.png"
+                  decoding="async"
+                  loading="lazy"
+                  alt=""
+                  class="park-details__cta-date-icon"
+                />
+                <span class="park-details__cta-date-label">Date</span>
+                <img
+                  src="/assets/images/park-dropdown-icon.png"
+                  decoding="async"
+                  loading="lazy"
+                  alt=""
+                  class="park-details__cta-date-chevron"
+                />
+              </div>
+              <div class="park-details__cta-person-container">
+                <img
+                  src="/assets/images/person-icon.png"
+                  alt=""
+                  decoding="async"
+                  loading="lazy"
+                  class="park-details__cta-person-icon"
+                />
+                <p class="park-details__cta-person-adult">
+                  <span class="park-details__cta-person-adult-no">1</span>
+                  <span class="park-details__cta-person-adult-label"
+                    >Adult</span
+                  >
+                </p>
+                <p class="park-details__cta-person-child">
+                  <span class="park-details__cta-person-child-no">0</span>
+                  <span class="park-details__cta-person-child-label"
+                    >Child</span
+                  >
+                </p>
+                <img
+                  src="/assets/images/park-dropdown-icon.png"
+                  decoding="async"
+                  loading="lazy"
+                  alt=""
+                  class="park-details__cta-person-chevron"
+                />
+              </div>
+              <button type="submit" class="park-details__cta-button">
+                Book
+              </button>
+            </div>
+            <a
+              href="#"
+              class="park-details__cta-share-link"
+              title="Share Shipahijala Wildlife Sanctuary"
             >
-
-            <input
-              class="radio-input"
-              type="radio"
-              id="star3"
-              name="star-input"
-              value="3"
-            />
-            <label class="radio-label" for="star3" title="3 stars"
-              >3 stars</label
-            >
-
-            <input
-              class="radio-input"
-              type="radio"
-              id="star2"
-              name="star-input"
-              value="2"
-            />
-            <label class="radio-label" for="star2" title="2 stars"
-              >2 stars</label
-            >
-
-            <input
-              class="radio-input"
-              type="radio"
-              id="star1"
-              name="star-input"
-              value="1"
-            />
-            <label class="radio-label" for="star1" title="1 star">1 star</label>
-          </form>
-          <div class="park-details__cta"></div>
+              <img
+                src="/assets/images/share-icon.png"
+                alt="share"
+                class="park-details__cta-share-icon"
+              />
+            </a>
+          </div>
           <p class="park-details__text-content">
             Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac.
             Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
             interdum, lectus in convallis pulvinar, enim elit porta sapien, vel
             finibus erat felis sed neque.
           </p>
+        </div>
+      </section>
+      <section class="park-activities section-inline-padding">
+        <div class="park-activities__contents-container">
+          <div class="park-activities__contents-title-container">
+            <h2 class="park-activities__contents-title">Activities</h2>
+            <small class="park-activities__contents-sub-title"
+              >Select from the exciting activities presented in the park
+              campus</small
+            >
+          </div>
+          <p class="park-activities__contents-content">
+            Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac.
+            Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
+            interdum, lectus in convallis pulvinar, enim elit porta sapien, vel
+            finibus erat felis sed neque.
+          </p>
+          <button class="park-activities__contents-btn">Book</button>
+        </div>
+        <div class="park-activities__activities-container">
+          <p class="park-activities__activity">Boating</p>
+          <p class="park-activities__activity">Zoo</p>
+          <p class="park-activities__activity">Elephant Ride</p>
+          <p class="park-activities__activity">Butterfly Park</p>
+        </div>
+      </section>
+      <section class="park-highlights">
+        <div class="park-highlights__wrapper section-inline-padding">
+          <div class="park-highlights__main-highlights">
+            <div class="park-highlights__main-highlights-title-container">
+              <h2 class="park-highlights__main-highlights-title">Services</h2>
+              <small class="park-highlights__main-highlights-sub-title"
+                >Select from the list of services offered by the park
+                authoriteis</small
+              >
+            </div>
+            <div class="park-highlights__main-highlights-container">
+              <p class="park-highlights__main-highlight">Picnic Spots</p>
+              <p class="park-highlights__main-highlight">Parking Areas</p>
+              <p class="park-highlights__main-highlight">
+                Camera / Videography
+              </p>
+              <p class="park-highlights__main-highlight">Food Courts</p>
+              <p class="park-highlights__main-highlight">Rentals</p>
+            </div>
+            <img
+              src="/assets/images/scroll-down-icon.png"
+              decoding="async"
+              loading="lazy"
+              alt=""
+              class="park-highlights__main-highlights-scroll-icon"
+            />
+          </div>
+          <div class="park-highlights__contents">
+            <p class="park-highlights__content">
+              Nulla eleifend pulvinar purus, molestie euismod odio imperdiet ac.
+              Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
+              interdum, lectus in convallis pulvinar, enim elit porta sapien,
+              vel finibus erat felis sed neque.
+            </p>
+            <button class="park-highlights__btn">Book</button>
+          </div>
         </div>
       </section>
     </main>
