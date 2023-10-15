@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Tripura Forest Parks And Sanctuary Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="cart-entry-page">
+    <header id="header" class="inverted">
+      <div class="brand">
+        <div class="logo-container">
+          <img
+            fetchpriority="high"
+            src="../assets/images/logo.png"
+            alt="Tripura Forest Department"
+          />
+        </div>
+        <div class="brand-name">
+          <h1>Tripura Forest Department</h1>
+          <p>Tripura Forest Parks and Sanctuaries Booking</p>
+        </div>
+      </div>
+      <div class="header-right-col">
+        <div class="currency-selector-container">
+          <div class="custom-select">
+            <select class="select-hidden" name="currency-selector">
+              <option value="1" selected>INR ( ₹ )</option>
+              <option value="2">USD ( $ )</option>
+            </select>
+            <div class="select-selected">INR ( ₹ )</div>
+            <div class="select-arrow"></div>
+            <ul class="select-items">
+              <li data-value="1">INR ( ₹ )</li>
+              <li data-value="2">USD ( $ )</li>
+            </ul>
+          </div>
+        </div>
+        <div class="notification-container">
+          <a href="#">
+            <img src="../assets/images/notifications.png" alt="Notifications" />
+          </a>
+        </div>
+        <div class="tickets-container">
+          <a href="#">
+            <img src="../assets/images/ticket.png" alt="Tickets" />
+          </a>
+        </div>
+        <div class="user-details-container">
+          <div class="user-image">
+            <a href="#">
+              <img src="../assets/images/user-circle.png" alt="Swanak Datta" />
+            </a>
+          </div>
+          <div class="user-details">
+            <p class="user-name">Swanak Datta</p>
+            <small class="user-phone-number">8794314350</small>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="cart-navigations section-inline-padding"">
+        <a href="#" class="cart-navigation__back-link">
+          <img
+            src="/assets/images/back-btn-img.png"
+            alt=""
+            class="cart-navigation__back-img"
+          />
+          <span class="cart-navigation__back-text">Back</span>
+        </a>
+      </section>
+      <section class="cart-details section-inline-padding">
+        <div class="cart-details__form">
+            <div class="cart-details__form-header">
+                <h2 class="cart-details__form-title">Ticket Cart</h2>
+                <ul class="cart-details__form-nav">
+                    <li class="cart-details__form-nav-item">Entry</li>
+                    <li class="cart-details__form-nav-item active">Activities</li>
+                    <li class="cart-details__form-nav-item">Services</li>
+                </ul>
+            </div>
+            <div class="cart-details__form-details-container">
+              <div class="cart-details__form-park-title-container">
+                <h3 class="cart-details__form-park-name">Shepahijala Wildlife Sanctuary</h3>
+                <small class="cart-details__form-details">Finalise your cart and proceed for booking</small>
+              </div>
+              <div class="cart-details__form-addon">
+                <h3 class="cart-details__form-addon-title">Activity Add-on</h3>
+                <small class="cart-details__form-addon-details">Total 4 Park Activities are available</small>
+              </div>
+            </div>
+            <div class="cart-details__form-container">
+              <div class="cart-details__form-activity">
+                <p class="cart-details__form-activity-name">Zoo</p>
+                <p class="cart-details__form-activty-rate" data-currency="₹">75</p>
+                <div class="cart-details__form-activity-input-container">
+                  <span class="cart-details__form-activity-input-decrease">-</span>
+                  <span class="cart-details__form-activity-input">12</span>
+                  <span class="cart-details__form-activity-input-increase">+</span>
+                </div>
+              </div>
+              <div class="cart-details__form-activity">
+                <p class="cart-details__form-activity-name">Elephant Safari</p>
+                <p class="cart-details__form-activty-rate" data-currency="₹">75</p>
+                <div class="cart-details__form-activity-input-container">
+                  <span class="cart-details__form-activity-input-decrease">-</span>
+                  <span class="cart-details__form-activity-input">12</span>
+                  <span class="cart-details__form-activity-input-increase">+</span>
+                </div>
+              </div>
+              <div class="cart-details__form-activity">
+                <p class="cart-details__form-activity-name">Boating</p>
+                <p class="cart-details__form-activty-rate" data-currency="₹">75</p>
+                <div class="cart-details__form-activity-input-container">
+                  <span class="cart-details__form-activity-input-decrease">-</span>
+                  <span class="cart-details__form-activity-input">32</span>
+                  <span class="cart-details__form-activity-input-increase">+</span>
+                </div>
+              </div>
+              <div class="cart-details__form-activity unavailable">
+                <p class="cart-details__form-activity-name">Butterfly Park</p>
+                <p class="cart-details__form-activty-rate" data-currency="₹">75</p>
+                <div class="cart-details__form-activity-input-container">
+                  <span class="cart-details__form-activity-input-decrease">-</span>
+                  <span class="cart-details__form-activity-input">0</span>
+                  <span class="cart-details__form-activity-input-increase">+</span>
+                </div>
+              </div>
+              <button class="cart-details__form-btn">Confirm</button>
+              <button class="cart-details__form-skip-btn">Skip</button>
+            </div>
+        </div>
+        <div class="cart-details__summary">
+          <h2 class="cart-details__summary-title">Booking Summary</h2>
+          <time class="cart-details__summary-date" datetime="2023-08-24T00:00">Thu, 24th Aug, 23</time>
+          <div class="cart-details__summary-details-container">
+            <p class="cart-details__summary-details-person-adults">Adults</p>
+            <p class="cart-details__summary-details-person-adults-count">12</p>
+            <p class="cart-details__summary-details-person-childrens">Children</p>
+            <p class="cart-details__summary-details-person-childrens-count">20</p>
+            <p class="cart-details__summary-details-total-title">Sub Total</p>
+            <div class="cart-details__summary-details-total-amount-container">
+              <p class="cart-details__summary-details-total-amount" data-currency="Rs.">932</p>
+              <div class="cart-details__summary-details-wrapper">
+                <img src="/assets/images/info-icon.png" alt="" class="cart-details__summary-details-icon">
+                <small class="cart-details__summary-details-text">Details</small>
+                <img src="/assets/images/park-dropdown-icon.png" decoding="async" loading="lazy" alt="" class="cart-details__summary-details-chevron">
+              </div>
+            </div>
+          </div>
+          <h3 class="cart-details__summary-addon-title">Addons : Activity</h3>
+          <div class="cart-details__summary-addon-details-container">
+            <div class="cart-details__summary-addon-details-wrapper">
+              <p class="cart-details__summary-addon-details-name">Zoo</p>
+              <p class="cart-details__summary-addon-details-count">20</p>
+              <img src="/assets/images/delete-icon.png" decoding="async" loading="lazy" alt="" class="cart-details__summary-addon-details-delete-img">
+            </div>
+            <div class="cart-details__summary-addon-details-wrapper">
+              <p class="cart-details__summary-addon-details-name">Elephant Safari</p>
+              <p class="cart-details__summary-addon-details-count">12</p>
+              <img src="/assets/images/delete-icon.png" decoding="async" loading="lazy" alt="" class="cart-details__summary-addon-details-delete-img">
+            </div>
+            <div class="cart-details__summary-addon-details-wrapper">
+              <p class="cart-details__summary-addon-details-name">Boating</p>
+              <p class="cart-details__summary-addon-details-count">32</p>
+              <img src="/assets/images/delete-icon.png" decoding="async" loading="lazy" alt="" class="cart-details__summary-addon-details-delete-img">
+            </div>
+          </div>
+          <div class="cart-details__summary-payable">
+            <h3 class="cart-details__summary-payable-title">Amount Payable</h3>
+            <h4 class="cart-details__summary-payable-amount" data-currency="Rs.">1045</h4>
+          </div>
+        </div>
+        <div class="footer-secondary__logos">
+          <img decoding="async" loading="lazy" src="../assets/images/master-card-logo.png" alt="" class="footer-secondary__logo">
+          <img decoding="async" loading="lazy" src="../assets/images/visa-logo.png" alt="" class="footer-secondary__logo">
+          <img decoding="async" loading="lazy" src="../assets/images/upi-logo.png" alt="" class="footer-secondary__logo">
+          <img decoding="async" loading="lazy" src="../assets/images/rupay-logo.png" alt="" class="footer-secondary__logo">
+          <img decoding="async" loading="lazy" src="../assets/images/net-banking.png" alt="" class="footer-secondary__logo">
+        </div>
+      </section>
+      <section class="cart-footer">
+        <progress class="cart-footer__progressbar" max="5" value="2">1</progress>
+        <ul class="cart-footer__progress-labels">
+          <li class="cart-footer__progress-label">
+            <div class="cart-footer__progress-lebel-wrapper">
+              <img src="/assets/images/tick-icon.png" alt="" class="cart-footer__progress-lebel-img">
+              <img src="/assets/images/tick-icon-green.png" alt="" class="cart-footer__progress-lebel-img-complete">
+              <p class="cart-footer__progress-label-text">Entry Tickets</p>
+            </div>
+          </li>
+          <li class="cart-footer__progress-label active">
+            <div class="cart-footer__progress-lebel-wrapper">
+              <img src="/assets/images/tick-icon.png" alt="" class="cart-footer__progress-lebel-img">
+              <img src="/assets/images/tick-icon-green.png" alt="" class="cart-footer__progress-lebel-img-complete">
+              <p class="cart-footer__progress-label-text">Activity</p>
+            </div>
+          </li>
+          <li class="cart-footer__progress-label">
+            <div class="cart-footer__progress-lebel-wrapper">
+              <img src="/assets/images/tick-icon.png" alt="" class="cart-footer__progress-lebel-img">
+              <img src="/assets/images/tick-icon-green.png" alt="" class="cart-footer__progress-lebel-img-complete">
+              <p class="cart-footer__progress-label-text">Services</p>
+            </div>
+          </li>
+          <li class="cart-footer__progress-label">
+            <div class="cart-footer__progress-lebel-wrapper">
+              <img src="/assets/images/tick-icon.png" alt="" class="cart-footer__progress-lebel-img">
+              <img src="/assets/images/tick-icon-green.png" alt="" class="cart-footer__progress-lebel-img-complete">
+              <p class="cart-footer__progress-label-text">Confirm & Pay</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
