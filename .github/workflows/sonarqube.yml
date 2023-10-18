@@ -73,4 +73,4 @@ jobs:
             -Dsonar.sourceEncoding=UTF-8
             -Dsonar.javascript.node.language=js
             -Dsonar.sources=.
-            -Dsonar.projectVersion=${{ env.SONAR_PROJECT_VERSION }} ? ${{ env.SONAR_PROJECT_VERSION }} : (github.event_name == 'pull_request') ? github.event.pull_request.head.sha : github.sha
+            -Dsonar.projectVersion=${{ env.SONAR_PROJECT_VERSION }}
