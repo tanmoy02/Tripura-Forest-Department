@@ -2528,6 +2528,11 @@ body {
   border-radius: 26px;
   border: 2px solid var(---f2b203);
   gap: 1rem;
+  opacity: 0.5;
+}
+
+.cart-details__form-activity.added {
+  opacity: 1;
 }
 
 .cart-details__form-activity-name {
@@ -2536,14 +2541,14 @@ body {
   color: var(--unnamed-color-000000);
 }
 
-.cart-details__form-activty-rate {
+.cart-details__form-activity-rate {
   font-size: var(--unnamed-font-size-16);
   line-height: 1.563em;
   position: relative;
   color: var(--unnamed-color-000000);
 }
 
-.cart-details__form-activty-rate::before {
+.cart-details__form-activity-rate::before {
   content: attr(data-currency);
   margin-inline-end: 0.5ch;
 }
@@ -2569,6 +2574,29 @@ body {
   position: relative;
   line-height: 20px;
   cursor: pointer;
+  user-select: none;
+}
+
+.cart-details__form-activity-input {
+  appearance: none;
+  background: transparent;
+  max-width: 4ch;
+  text-align: center;
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-moz-appearance:textfield {
+  appearance: textfield;
 }
 
 .cart-details__form-activity-input-container
@@ -2589,12 +2617,6 @@ body {
 .cart-details__form-activity-input-container
   .cart-details__form-activity-input-increase::after {
   content: "+";
-}
-
-.cart-details__form-activity.unavailable
-  .cart-details__form-activity-input-container
-  [class^="cart-details__form-activity-input-"] {
-  cursor: not-allowed;
 }
 
 .cart-entry-page .cart-details__form-btn {
@@ -2629,9 +2651,12 @@ body {
   margin-block-end: 1rem;
 }
 
-.cart-details__summary-addon-details-delete-img {
-  max-width: 15px;
-  cursor: pointer;
+.cart-details__summary-addon-details-delete {
+  width: 15px;
+  height: 15px;
+  background: url(../assets/images/delete-icon.png) center center no-repeat;
+  background-size: contain;
+  border-radius: 50%;
 }
 
 .cart-details__summary-addon-details-count {
@@ -2658,6 +2683,20 @@ body {
 
 .cart-details__summary-addon-details-container {
   margin-block-start: 1rem;
+}
+
+.cart-details__summary-addon-details-na {
+  margin-block-end: 1.5rem;
+  font-size: var(--unnamed-font-size-16);
+  font-weight: var(--unnamed-font-weight-300);
+  line-height: 1.188em;
+  color: var(---3a3a3c);
+  display: none;
+}
+
+.cart-details__summary-addon-details-container
+  > .cart-details__summary-addon-details-na:only-child {
+  display: block;
 }
 
 .cart-details__summary-payable {
@@ -2700,15 +2739,6 @@ body {
 
 .cart-details__summary-addon-details-wrapper:last-child {
   margin-block-end: 1.5rem;
-}
-
-.cart-details__form-activity.unavailable {
-  opacity: 0.5;
-}
-
-.cart-details__form-activity.unavailable
-  span[class^="cart-details__form-activity-input-"] {
-  cursor: not-allowed;
 }
 
 /* OTP Page */
@@ -3369,6 +3399,7 @@ strong {
 
 /* Booking Success page */
 .booking-success__ref-id,
+.booking-failed__ref-id,
 .booking-success__transaction-id {
   font-size: var(--unnamed-font-size-22);
   font-weight: 300;
@@ -3380,11 +3411,13 @@ strong {
   margin-block-start: 8px;
 }
 
-.booking-success__ref-id {
+.booking-success__ref-id,
+.booking-failed__ref-id {
   margin-block-start: 0.82em;
 }
 
-.booking-success__card-container {
+.booking-success__card-container,
+.booking-failed__card-container {
   padding: 20px 50px 28px 20px;
   border: 2px solid var(---f3bc3e);
   background: var(---f1f1f1);
@@ -3395,7 +3428,8 @@ strong {
   margin-block-start: 2rem;
 }
 
-.booking-success__card-container::after {
+.booking-success__card-container::after,
+.booking-failed__card-container::after {
   content: "";
   position: absolute;
   top: 27px;
@@ -3406,14 +3440,16 @@ strong {
   border-radius: 50%;
 }
 
-.booking-success__card-date {
+.booking-success__card-date,
+.booking-failed__card-date {
   font-size: 1rem;
   font-weight: 700;
   color: var(---f2b203);
   line-height: 1.5em;
 }
 
-.booking-success__card-park-name {
+.booking-success__card-park-name,
+.booking-failed__card-park-name {
   font-size: var(--unnamed-font-size-22);
   color: var(---f2b203);
   line-height: 1.53em;
@@ -3422,7 +3458,8 @@ strong {
   font-weight: 500;
 }
 
-.booking-success__card-details {
+.booking-success__card-details,
+.booking-failed__card-details {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
@@ -3431,12 +3468,15 @@ strong {
 }
 
 .booking-success__card-name,
-.booking-success__card-quantity {
+.booking-failed__card-name,
+.booking-success__card-quantity,
+.booking-failed__card-quantity {
   font-size: var(--unnamed-font-size-18);
   line-height: 1.5em;
 }
 
-.booking-success__card-phone {
+.booking-success__card-phone,
+.booking-failed__card-phone {
   font-size: var(--unnamed-font-size-12);
   line-height: 2.5em;
   justify-self: end;
@@ -3448,7 +3488,8 @@ strong {
   margin-inline-end: 5px;
 }
 
-.booking-success__card-footer {
+.booking-success__card-footer,
+.booking-failed__card-footer {
   margin-block-start: 43px;
   display: flex;
   flex-direction: row;
@@ -3458,11 +3499,13 @@ strong {
   overflow: hidden;
 }
 
-.booking-success__card-footer > img {
+.booking-success__card-footer > img,
+.booking-failed__card-footer > img {
   max-height: 19px;
 }
 
-.booking-success-page .cart-details__summary-payable {
+.booking-success-page .cart-details__summary-payable,
+.booking-failed-page .cart-details__summary-payable {
   padding-block-start: 60px;
   border-block-start: none;
 }
@@ -3497,4 +3540,28 @@ strong {
 
 .booking-success-page .cart-details {
   padding-block: 15px 97px !important;
+}
+
+/* Booking Failed Page */
+.booking-failed__card-container {
+  background: var(---1d1d1f);
+}
+
+.booking-failed__card-status {
+  justify-self: end;
+  font-size: var(--unnamed-font-size-12);
+  padding-inline-end: 2.2em;
+  margin-block-start: 1ch;
+}
+
+.cart-footer__progress-lebel-img-failed {
+  display: none;
+}
+
+.cart-footer__progress-label.failed .cart-footer__progress-lebel-img-failed {
+  display: block;
+}
+
+.cart-footer__progress-label.failed .cart-footer__progress-lebel-img-complete {
+  display: none;
 }
