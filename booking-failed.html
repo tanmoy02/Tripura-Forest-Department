@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Booking Successful - Tripura Forest Parks And Sanctuary Booking
-    </title>
+    <title>Booking Failed - Tripura Forest Parks And Sanctuary Booking</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="booking-success-page">
+  <body class="booking-failed-page">
     <header id="header" class="inverted">
       <div class="brand">
         <div class="logo-container">
@@ -63,7 +61,7 @@
       </div>
     </header>
     <main id="main">
-      <section class="booking-success-navigations section-inline-padding">
+      <section class="booking-failed-navigations section-inline-padding">
         <a href=" #" class="booking-success-navigation__back-link">
           <img
             src="/assets/images/back-btn-img.png"
@@ -85,82 +83,65 @@
           </div>
           <div class="cart-details__form-details-container">
             <div class="cart-details__form-park-title-container">
-              <h3 class="cart-details__form-park-name">Booking Complete</h3>
-              <p class="booking-success__ref-id" id="booking-success__ref-id">
+              <h3 class="cart-details__form-park-name">Booking Failure</h3>
+              <p class="booking-failed__ref-id" id="booking-failed__ref-id">
                 Ref ID:
                 <span
-                  class="booking-success__ref-id-value"
-                  id="booking-success__ref-id-value"
-                  >xxyyzzz1212</span
-                >
-              </p>
-              <p
-                class="booking-success__transaction-id"
-                id="booking-success__transaction-id"
-              >
-                Transaction ID:
-                <span
-                  class="booking-success__transaction-id-value"
-                  id="booking-success__transaction-id-value"
+                  class="booking-failed__ref-id-value"
+                  id="booking-failed__ref-id-value"
                   >xxyyzzz1212</span
                 >
               </p>
             </div>
           </div>
-          <div class="booking-success__card-container">
-            <time class="booking-success__card-date" datetime="2023-08-24T00:00"
+          <div class="booking-failed__card-container">
+            <time class="booking-failed__card-date" datetime="2023-08-24T00:00"
               >24th Aug, 23</time
             >
-            <h3 class="booking-success__card-park-name">
+            <h3 class="booking-failed__card-park-name">
               Shepahijala Wildlife Sanctuary
             </h3>
-            <div class="booking-success__card-details">
-              <p class="booking-success__card-name">Swanak Datta</p>
-              <p class="booking-success__card-phone">8794314350</p>
-              <p class="booking-success__card-quantity">26 Tickets</p>
-              <img
-                src="/assets/images/booking-success-qr.png"
-                loading="lazy"
-                decoding="async"
-                alt=""
-                class="booking-success__card-qr"
-              />
+            <div class="booking-failed__card-details">
+              <p class="booking-failed__card-name">Swanak Datta</p>
+              <p class="booking-failed__card-phone">8794314350</p>
+              <p class="booking-failed__card-quantity">26 Tickets</p>
+              <p class="booking-failed__card-status">FAILED</p>
             </div>
-            <div class="booking-success__card-footer">
+            <div class="booking-failed__card-footer">
               <img
-                src="/assets/images/Mastercard.png"
+                src="/assets/images/mastercard-white.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
-                class="booking-success__card-payment-methods"
+                class="booking-failed__card-payment-methods"
               />
               <img
-                src="/assets/images/VISA.png"
+                src="/assets/images/visa-white.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
-                class="booking-success__card-payment-methods"
+                class="booking-failed__card-payment-methods"
               />
               <img
-                src="/assets/images/UPI.png"
+                src="/assets/images/upi-white.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
-                class="booking-success__card-payment-methods"
+                class="booking-failed__card-payment-methods"
               />
               <img
-                src="/assets/images/RuPay.png"
+                src="/assets/images/rupay-white.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
-                class="booking-success__card-payment-methods"
+                class="booking-failed__card-payment-methods"
               />
               <img
-                src="/assets/images/Net-Banking-color.png"
+                src="/assets/images/net-banking-white.png"
                 alt=""
                 loading="lazy"
                 decoding="async"
-                class="booking-success__card-payment-methods"
+                class="booking-failed__card-payment-methods"
               />
             </div>
           </div>
@@ -169,7 +150,7 @@
         <div class="cart-details__summary">
           <h2 class="cart-details__summary-title">Booking Summary</h2>
           <lottie-player
-            src="/assets/booking_success.json"
+            src="/assets/booking_failed.json"
             background="transparent"
             speed="1"
             style="width: 166px; height: 166px"
@@ -253,7 +234,7 @@
               <p class="cart-footer__progress-label-text">Services</p>
             </div>
           </li>
-          <li class="cart-footer__progress-label active">
+          <li class="cart-footer__progress-label failed">
             <div class="cart-footer__progress-lebel-wrapper">
               <img
                 src="/assets/images/tick-icon.png"
@@ -264,6 +245,11 @@
                 src="/assets/images/tick-icon-green.png"
                 alt=""
                 class="cart-footer__progress-lebel-img-complete"
+              />
+              <img
+                src="/assets/images/failed-icon.png"
+                alt=""
+                class="cart-footer__progress-lebel-img-failed"
               />
               <p class="cart-footer__progress-label-text">Confirm & Pay</p>
             </div>
