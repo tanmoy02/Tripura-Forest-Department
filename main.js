@@ -5,8 +5,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const addOnContainer = document.querySelector(
     ".cart-details__summary-addon-details-container"
   );
+  const parkDropDown = document.querySelector(".park-selection-text");
+  const parkDropDownList = document.querySelector(
+    ".park-selection-dropdown__body-wrapper"
+  );
 
-  calculate();
+  parkDropDown.addEventListener("click", (e) => {
+    e.target.classList.toggle("park-selection-active");
+  });
+
+  parkDropDownList.addEventListener("click", (e) => {
+    if (e.target.classList.contains("park-selection-dropdown__body-item")) {
+      parkDropDown.textContent = e.target.textContent;
+      parkDropDown.classList.remove("park-selection-active");
+    }
+  });
 
   activityList.forEach((activity) => {
     const activityName = activity.querySelector(
@@ -39,34 +52,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  addOnContainer.addEventListener("click", (e) => {
-    if (
-      e.target.classList.contains("cart-details__summary-addon-details-delete")
-    ) {
-      const wrapper = e.target.closest(
-        ".cart-details__summary-addon-details-wrapper"
-      );
-      let inputToReset;
-      activityList.forEach((activity) => {
-        const activityName = activity.querySelector(
-          ".cart-details__form-activity-name"
-        ).textContent;
-        if (
-          activityName.trim() ===
-          wrapper
-            .querySelector(".cart-details__summary-addon-details-name")
-            .textContent.trim()
-        ) {
-          inputToReset = activity.querySelector(
-            ".cart-details__form-activity-input"
-          );
-        }
-      });
-      deleteAddOn(wrapper);
-      resetInput(inputToReset);
-      calculate();
-    }
-  });
+  if (addOnContainer) {
+    calculate();
+
+    addOnContainer.addEventListener("click", (e) => {
+      if (
+        e.target.classList.contains(
+          "cart-details__summary-addon-details-delete"
+        )
+      ) {
+        const wrapper = e.target.closest(
+          ".cart-details__summary-addon-details-wrapper"
+        );
+        let inputToReset;
+        activityList.forEach((activity) => {
+          const activityName = activity.querySelector(
+            ".cart-details__form-activity-name"
+          ).textContent;
+          if (
+            activityName.trim() ===
+            wrapper
+              .querySelector(".cart-details__summary-addon-details-name")
+              .textContent.trim()
+          ) {
+            inputToReset = activity.querySelector(
+              ".cart-details__form-activity-input"
+            );
+          }
+        });
+        deleteAddOn(wrapper);
+        resetInput(inputToReset);
+        calculate();
+      }
+    });
+  }
 });
 
 const toggleClass = (input, element) => {

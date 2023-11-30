@@ -1,847 +1,648 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tripura Forest Parks And Sanctuary Booking</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="home-page">
-    <header id="header">
-      <div class="brand">
-        <div class="logo-container">
-          <img
-            fetchpriority="high"
-            src="../assets/images/logo.png"
-            alt="Tripura Forest Department"
-          />
-        </div>
-        <div class="brand-name">
-          <h1>Tripura Forest Department</h1>
-          <p>Tripura Forest Parks and Sanctuaries Booking</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tripura Forest Parks And Sanctuary Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="home-page">
+  <header id="header">
+    <div class="brand">
+      <div class="logo-container">
+        <img fetchpriority="high" src="../assets/images/logo.png" alt="Tripura Forest Department" />
+      </div>
+      <div class="brand-name">
+        <h1>Tripura Forest Department</h1>
+        <p>Tripura Forest Parks and Sanctuaries Booking</p>
+      </div>
+    </div>
+    <div class="header-right-col">
+      <div class="currency-selector-container">
+        <div class="custom-select">
+          <select class="select-hidden" name="currency-selector">
+            <option value="1" selected>INR ( ₹ )</option>
+            <option value="2">USD ( $ )</option>
+          </select>
+          <div class="select-selected">INR ( ₹ )</div>
+          <div class="select-arrow"></div>
+          <ul class="select-items">
+            <li data-value="1">INR ( ₹ )</li>
+            <li data-value="2">USD ( $ )</li>
+          </ul>
         </div>
       </div>
-      <div class="header-right-col">
-        <div class="currency-selector-container">
-          <div class="custom-select">
-            <select class="select-hidden" name="currency-selector">
-              <option value="1" selected>INR ( ₹ )</option>
-              <option value="2">USD ( $ )</option>
-            </select>
-            <div class="select-selected">INR ( ₹ )</div>
-            <div class="select-arrow"></div>
-            <ul class="select-items">
-              <li data-value="1">INR ( ₹ )</li>
-              <li data-value="2">USD ( $ )</li>
-            </ul>
-          </div>
-        </div>
-        <div class="notification-container">
+      <div class="notification-container">
+        <a href="#">
+          <img src="../assets/images/notifications.png" alt="Notifications" />
+        </a>
+      </div>
+      <div class="tickets-container">
+        <a href="#">
+          <img src="../assets/images/ticket.png" alt="Tickets" />
+        </a>
+      </div>
+      <div class="user-details-container">
+        <div class="user-image">
           <a href="#">
-            <img src="../assets/images/notifications.png" alt="Notifications" />
+            <img src="../assets/images/user-circle.png" alt="Swanak Datta" />
           </a>
         </div>
-        <div class="tickets-container">
-          <a href="#">
-            <img src="../assets/images/ticket.png" alt="Tickets" />
-          </a>
+        <div class="user-details">
+          <p class="user-name">Swanak Datta</p>
+          <small class="user-phone-number">8794314350</small>
         </div>
-        <div class="user-details-container">
-          <div class="user-image">
-            <a href="#">
-              <img src="../assets/images/user-circle.png" alt="Swanak Datta" />
-            </a>
-          </div>
-          <div class="user-details">
-            <p class="user-name">Swanak Datta</p>
-            <small class="user-phone-number">8794314350</small>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="home-banner">
+      <img fetchpriority="high" src="../assets/images/home-banner.png" alt="" />
+    </section>
+    <section class="park-selection-container">
+      <div class="park-selection-wrapper">
+        <img decoding="async" loading="lazy" src="../assets/images/park-selection-icon.png" alt=""
+          class="search-icon" />
+        <p class="park-selection-text">Select your Park or Sanctuary</p>
+        <img decoding="async" loading="lazy" src="../assets/images/park-dropdown-icon.png" alt=""
+          class="park-selection-chevron" />
+        <button class="park-selection-btn" type="submit">Enter</button>
+        <div class="park-selection-dropdown">
+          <ul class="park-selection-dropdown__header">
+            <li class="park-selection-dropdown__header-content active">All</li>
+            <li class="park-selection-dropdown__header-content">Parks</li>
+            <li class="park-selection-dropdown__header-content">Sanctuaries</li>
+          </ul>
+          <div class="park-selection-dropdown__body-wrapper">
+            <div class="park-selection-dropdown__body">
+              <h4 class="park-selection-dropdown__body-title">Parks</h4>
+              <ul class="park-selection-dropdown__body-items">
+                <li class="park-selection-dropdown__body-item">Tepania Eco Park</li>
+                <li class="park-selection-dropdown__body-item">Heritage Park</li>
+                <li class="park-selection-dropdown__body-item">Albert Ekka Park</li>
+                <li class="park-selection-dropdown__body-item">Oxygen Park</li>
+                <li class="park-selection-dropdown__body-item">Albert Ekka Park</li>
+                <li class="park-selection-dropdown__body-item">Oxygen Park</li>
+                <li class="park-selection-dropdown__body-item">Tepania Eco Park</li>
+                <li class="park-selection-dropdown__body-item">Heritage Park</li>
+                <li class="park-selection-dropdown__body-item">Albert Ekka Park</li>
+                <li class="park-selection-dropdown__body-item">Oxygen Park</li>
+                <li class="park-selection-dropdown__body-item">Albert Ekka Park</li>
+                <li class="park-selection-dropdown__body-item">Oxygen Park</li>
+                <li class="park-selection-dropdown__body-item">Tepania Eco Park</li>
+                <li class="park-selection-dropdown__body-item">Heritage Park</li>
+                <li class="park-selection-dropdown__body-item">Albert Ekka Park</li>
+                <li class="park-selection-dropdown__body-item">Oxygen Park</li>
+                <li class="park-selection-dropdown__body-item">Albert Ekka Park</li>
+                <li class="park-selection-dropdown__body-item">Oxygen Park</li>
+              </ul>
+            </div>
+            <div class="park-selection-dropdown__body">
+              <h4 class="park-selection-dropdown__body-title">Wildlife Sanctuaries</h4>
+              <ul class="park-selection-dropdown__body-items">
+                <li class="park-selection-dropdown__body-item">Shipahijala Wildlife Sanctuary</li>
+                <li class="park-selection-dropdown__body-item">Trishna Wildlife Sanctuary</li>
+                <li class="park-selection-dropdown__body-item">Gumti Wildlife Sanctuary</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <main id="main">
-      <section class="home-banner">
-        <img
-          fetchpriority="high"
-          src="../assets/images/home-banner.png"
-          alt=""
-        />
-      </section>
-      <section class="park-selection-container">
-        <div class="park-selection-wrapper">
-          <img
-            decoding="async"
-            loading="lazy"
-            src="../assets/images/park-selection-icon.png"
-            alt=""
-            class="search-icon"
-          />
-          <p class="park-selection-text">Select your Park or Sanctuary</p>
-          <img
-            decoding="async"
-            loading="lazy"
-            src="../assets/images/park-dropdown-icon.png"
-            alt=""
-            class="park-selection-chevron"
-          />
-          <button class="park-selection-btn" type="submit">Enter</button>
+    </section>
+    <section class="cta-section">
+      <div class="cta-section__graphics">
+        <h2 class="cta-section__text">
+          <span class="top-text">one</span>
+          <span class="middle-text">Ticket</span>
+          <span class="bottom-text">solution for exploring&nbsp;<label class="bg-green">Tripura</label></span>
+        </h2>
+        <div class="cta-section__card">
+          <img decoding="async" loading="lazy" src="../assets/images/cta-qr.png" alt="" class="cta-card__image" />
         </div>
-      </section>
-      <section class="cta-section">
-        <div class="cta-section__graphics">
-          <h2 class="cta-section__text">
-            <span class="top-text">one</span>
-            <span class="middle-text">Ticket</span>
-            <span class="bottom-text"
-              >solution for exploring&nbsp;<label class="bg-green"
-                >Tripura</label
-              ></span
-            >
-          </h2>
-          <div class="cta-section__card">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/cta-qr.png"
-              alt=""
-              class="cta-card__image"
-            />
+        <img decoding="async" loading="lazy" src="../assets/images/cta-image.png" alt="" class="cta-section__image" />
+      </div>
+      <div class="cta-section__content">
+        <small>Who are we</small>
+        <h2 class="cta-main__content">
+          A <span class="bg-green">North East Indian</span> state with
+          <span class="cta-focused">60<sub>%</sub></span>
+          <span class="cta-main__content-end">lush forest coverage, rare flora, wildlife species.</span>
+        </h2>
+        <p class="cta-main__sub-content">
+          Book <strong>tickets</strong>,
+          explore&nbsp;&&nbsp;enjoy&nbsp;<strong>activities</strong>
+          affordable <strong>services</strong>
+        </p>
+        <button class="cta-section__btn bg-yellow">Explore</button>
+      </div>
+    </section>
+    <section class="trending-destinations section-inline-padding">
+      <div class="trending-destinations__title-container">
+        <h2 class="trending-destinations__title">Trending Destinations</h2>
+        <small class="trending-destinations__sub-title">Pick a spot and explore top destinations across Tripura</small>
+        <a href="#" class="trending-destinations__explore-link">Explore all</a>
+      </div>
+      <div class="trending-destinations__cards">
+        <div class="trending-destination__card">
+          <img decoding="async" loading="lazy" src="../assets/images/td-1.jpg" alt="Shipahijala Wildlife Sanctuary"
+            class="trending-destinations__card-image" />
+          <div class="trending-destinations__card-contents">
+            <div class="trending-destinations__card-top-row">
+              <span class="trending-destinations__card-no">5</span>
+              <a href="#" class="trending-destinations__card-title">
+                Shipahijala Wildlife Sanctuary
+              </a>
+            </div>
+            <div class="trendig-destinations__card-bottom-row">
+              <div class="trending-destinations__card-specs">
+                <meter class="trending-destinations__card-rating" min="0" max="5" value="5" title="5 out of 5 stars"
+                  style="--percent: calc(5 / 5 * 100%)">
+                  5 out of 5
+                </meter>
+                <p class="trending-destinations__card-tags">#Sanctuary</p>
+                <p class="trending-destinations__card-location">
+                  West District, Kunjaban, Agartala
+                </p>
+              </div>
+              <p class="trending-destinations__card-content">
+                Best place in Agartala to spend a perfect moment. Get embraced
+                in lap of nature inside…
+              </p>
+            </div>
           </div>
-          <img
-            decoding="async"
-            loading="lazy"
-            src="../assets/images/cta-image.png"
-            alt=""
-            class="cta-section__image"
-          />
         </div>
-        <div class="cta-section__content">
-          <small>Who are we</small>
-          <h2 class="cta-main__content">
-            A <span class="bg-green">North East Indian</span> state with
-            <span class="cta-focused">60<sub>%</sub></span>
-            <span class="cta-main__content-end"
-              >lush forest coverage, rare flora, wildlife species.</span
-            >
-          </h2>
-          <p class="cta-main__sub-content">
-            Book <strong>tickets</strong>,
-            explore&nbsp;&&nbsp;enjoy&nbsp;<strong>activities</strong>
-            affordable <strong>services</strong>
+        <div class="trending-destination__card">
+          <img decoding="async" loading="lazy" src="../assets/images/td-2.jpg" alt=""
+            class="trending-destinations__card-image" />
+          <div class="trending-destinations__card-contents">
+            <div class="trending-destinations__card-top-row">
+              <span class="trending-destinations__card-no">4</span>
+              <a href="#" class="trending-destinations__card-title">
+                Albert Ekka Park
+              </a>
+            </div>
+            <div class="trendig-destinations__card-bottom-row">
+              <div class="trending-destinations__card-specs">
+                <meter class="trending-destinations__card-rating" min="0" max="5" value="4" title="4 out of 5 stars"
+                  style="--percent: calc(4 / 5 * 100%)">
+                  4 out of 5
+                </meter>
+                <p class="trending-destinations__card-tags">#Sanctuary</p>
+                <p class="trending-destinations__card-location">
+                  West District, Kunjaban, Agartala
+                </p>
+              </div>
+              <p class="trending-destinations__card-content">
+                Best place in Agartala to spend a perfect moment. Get embraced
+                in lap of nature inside…
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="trending-destination__card">
+          <img decoding="async" loading="lazy" src="../assets/images/td-1.jpg" alt=""
+            class="trending-destinations__card-image" />
+          <div class="trending-destinations__card-contents">
+            <div class="trending-destinations__card-top-row">
+              <span class="trending-destinations__card-no">4</span>
+              <a href="#" class="trending-destinations__card-title">
+                Hertitage Eco Park
+              </a>
+            </div>
+            <div class="trendig-destinations__card-bottom-row">
+              <div class="trending-destinations__card-specs">
+                <meter class="trending-destinations__card-rating" min="0" max="5" value="5" title="5 out of 5 stars"
+                  style="--percent: calc(5 / 5 * 100%)">
+                  5 out of 5
+                </meter>
+                <p class="trending-destinations__card-tags">#Sanctuary</p>
+                <p class="trending-destinations__card-location">
+                  West District, Kunjaban, Agartala
+                </p>
+              </div>
+              <p class="trending-destinations__card-content">
+                Best place in Agartala to spend a perfect moment. Get embraced
+                in lap of nature inside…
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="trending-destination__card">
+          <img decoding="async" loading="lazy" src="../assets/images/td-2.jpg" alt=""
+            class="trending-destinations__card-image" />
+          <div class="trending-destinations__card-contents">
+            <div class="trending-destinations__card-top-row">
+              <span class="trending-destinations__card-no">3</span>
+              <a href="#" class="trending-destinations__card-title">
+                Oxygen Eco Park
+              </a>
+            </div>
+            <div class="trendig-destinations__card-bottom-row">
+              <div class="trending-destinations__card-specs">
+                <meter class="trending-destinations__card-rating" min="0" max="5" value="3" title="3 out of 5 stars"
+                  style="--percent: calc(3 / 5 * 100%)">
+                  3 out of 5
+                </meter>
+                <p class="trending-destinations__card-tags">#Sanctuary</p>
+                <p class="trending-destinations__card-location">
+                  West District, Kunjaban, Agartala
+                </p>
+              </div>
+              <p class="trending-destinations__card-content">
+                Best place in Agartala to spend a perfect moment. Get embraced
+                in lap of nature inside…
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="trending-destination__card">
+          <img decoding="async" loading="lazy" src="../assets/images/td-1.jpg" alt=""
+            class="trending-destinations__card-image" />
+          <div class="trending-destinations__card-contents">
+            <div class="trending-destinations__card-top-row">
+              <span class="trending-destinations__card-no">5</span>
+              <a href="#" class="trending-destinations__card-title">
+                Tepania Eco Park
+              </a>
+            </div>
+            <div class="trendig-destinations__card-bottom-row">
+              <div class="trending-destinations__card-specs">
+                <meter class="trending-destinations__card-rating" min="0" max="5" value="5" title="5 out of 5 stars"
+                  style="--percent: calc(5 / 5 * 100%)">
+                  5 out of 5
+                </meter>
+                <p class="trending-destinations__card-tags">#Sanctuary</p>
+                <p class="trending-destinations__card-location">
+                  West District, Kunjaban, Agartala
+                </p>
+              </div>
+              <p class="trending-destinations__card-content">
+                Best place in Agartala to spend a perfect moment. Get embraced
+                in lap of nature inside…
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="todo-container section-inline-padding">
+      <h2 class="todo__title">Things to do around</h2>
+      <div class="todo__contents">
+        <div class="todo__contents-left">
+          <p class="todo__content">
+            Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit
+            amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut,
+            dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean
+            at leo tellus. Morbi eu leo sapien.
           </p>
-          <button class="cta-section__btn bg-yellow">Explore</button>
+          <h3 class="todo_content-title">Activities</h3>
         </div>
-      </section>
-      <section class="trending-destinations section-inline-padding">
-        <div class="trending-destinations__title-container">
-          <h2 class="trending-destinations__title">Trending Destinations</h2>
-          <small class="trending-destinations__sub-title"
-            >Pick a spot and explore top destinations across Tripura</small
-          >
-          <a href="#" class="trending-destinations__explore-link"
-            >Explore all</a
-          >
+        <div class="todo__contents-right">
+          <p class="todo__content">
+            Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit
+            amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut,
+            dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean
+            at leo tellus. Morbi eu leo sapien.
+          </p>
+          <h3 class="todo_content-title">Services</h3>
         </div>
-        <div class="trending-destinations__cards">
-          <div class="trending-destination__card">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/td-1.jpg"
-              alt="Shipahijala Wildlife Sanctuary"
-              class="trending-destinations__card-image"
-            />
-            <div class="trending-destinations__card-contents">
-              <div class="trending-destinations__card-top-row">
-                <span class="trending-destinations__card-no">5</span>
-                <a href="#" class="trending-destinations__card-title">
-                  Shipahijala Wildlife Sanctuary
-                </a>
-              </div>
-              <div class="trendig-destinations__card-bottom-row">
-                <div class="trending-destinations__card-specs">
-                  <meter
-                    class="trending-destinations__card-rating"
-                    min="0"
-                    max="5"
-                    value="5"
-                    title="5 out of 5 stars"
-                    style="--percent: calc(5 / 5 * 100%)"
-                  >
-                    5 out of 5
-                  </meter>
-                  <p class="trending-destinations__card-tags">#Sanctuary</p>
-                  <p class="trending-destinations__card-location">
-                    West District, Kunjaban, Agartala
-                  </p>
-                </div>
-                <p class="trending-destinations__card-content">
-                  Best place in Agartala to spend a perfect moment. Get embraced
-                  in lap of nature inside…
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="trending-destination__card">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/td-2.jpg"
-              alt=""
-              class="trending-destinations__card-image"
-            />
-            <div class="trending-destinations__card-contents">
-              <div class="trending-destinations__card-top-row">
-                <span class="trending-destinations__card-no">4</span>
-                <a href="#" class="trending-destinations__card-title">
-                  Albert Ekka Park
-                </a>
-              </div>
-              <div class="trendig-destinations__card-bottom-row">
-                <div class="trending-destinations__card-specs">
-                  <meter
-                    class="trending-destinations__card-rating"
-                    min="0"
-                    max="5"
-                    value="4"
-                    title="4 out of 5 stars"
-                    style="--percent: calc(4 / 5 * 100%)"
-                  >
-                    4 out of 5
-                  </meter>
-                  <p class="trending-destinations__card-tags">#Sanctuary</p>
-                  <p class="trending-destinations__card-location">
-                    West District, Kunjaban, Agartala
-                  </p>
-                </div>
-                <p class="trending-destinations__card-content">
-                  Best place in Agartala to spend a perfect moment. Get embraced
-                  in lap of nature inside…
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="trending-destination__card">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/td-1.jpg"
-              alt=""
-              class="trending-destinations__card-image"
-            />
-            <div class="trending-destinations__card-contents">
-              <div class="trending-destinations__card-top-row">
-                <span class="trending-destinations__card-no">4</span>
-                <a href="#" class="trending-destinations__card-title">
-                  Hertitage Eco Park
-                </a>
-              </div>
-              <div class="trendig-destinations__card-bottom-row">
-                <div class="trending-destinations__card-specs">
-                  <meter
-                    class="trending-destinations__card-rating"
-                    min="0"
-                    max="5"
-                    value="5"
-                    title="5 out of 5 stars"
-                    style="--percent: calc(5 / 5 * 100%)"
-                  >
-                    5 out of 5
-                  </meter>
-                  <p class="trending-destinations__card-tags">#Sanctuary</p>
-                  <p class="trending-destinations__card-location">
-                    West District, Kunjaban, Agartala
-                  </p>
-                </div>
-                <p class="trending-destinations__card-content">
-                  Best place in Agartala to spend a perfect moment. Get embraced
-                  in lap of nature inside…
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="trending-destination__card">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/td-2.jpg"
-              alt=""
-              class="trending-destinations__card-image"
-            />
-            <div class="trending-destinations__card-contents">
-              <div class="trending-destinations__card-top-row">
-                <span class="trending-destinations__card-no">3</span>
-                <a href="#" class="trending-destinations__card-title">
-                  Oxygen Eco Park
-                </a>
-              </div>
-              <div class="trendig-destinations__card-bottom-row">
-                <div class="trending-destinations__card-specs">
-                  <meter
-                    class="trending-destinations__card-rating"
-                    min="0"
-                    max="5"
-                    value="3"
-                    title="3 out of 5 stars"
-                    style="--percent: calc(3 / 5 * 100%)"
-                  >
-                    3 out of 5
-                  </meter>
-                  <p class="trending-destinations__card-tags">#Sanctuary</p>
-                  <p class="trending-destinations__card-location">
-                    West District, Kunjaban, Agartala
-                  </p>
-                </div>
-                <p class="trending-destinations__card-content">
-                  Best place in Agartala to spend a perfect moment. Get embraced
-                  in lap of nature inside…
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="trending-destination__card">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/td-1.jpg"
-              alt=""
-              class="trending-destinations__card-image"
-            />
-            <div class="trending-destinations__card-contents">
-              <div class="trending-destinations__card-top-row">
-                <span class="trending-destinations__card-no">5</span>
-                <a href="#" class="trending-destinations__card-title">
-                  Tepania Eco Park
-                </a>
-              </div>
-              <div class="trendig-destinations__card-bottom-row">
-                <div class="trending-destinations__card-specs">
-                  <meter
-                    class="trending-destinations__card-rating"
-                    min="0"
-                    max="5"
-                    value="5"
-                    title="5 out of 5 stars"
-                    style="--percent: calc(5 / 5 * 100%)"
-                  >
-                    5 out of 5
-                  </meter>
-                  <p class="trending-destinations__card-tags">#Sanctuary</p>
-                  <p class="trending-destinations__card-location">
-                    West District, Kunjaban, Agartala
-                  </p>
-                </div>
-                <p class="trending-destinations__card-content">
-                  Best place in Agartala to spend a perfect moment. Get embraced
-                  in lap of nature inside…
-                </p>
-              </div>
-            </div>
-          </div>
+      </div>
+    </section>
+    <section class="districts section-inline-padding">
+      <div class="districts__title-container">
+        <h2 class="districts__title">Our Districts</h2>
+        <small class="districts__sub-title">Brows locations districtwise</small>
+      </div>
+      <div class="districts__container">
+        <div class="district">
+          <img decoding="async" loading="lazy" src="../assets/images/west.png" alt="" class="district__img" /><a
+            href="#" class="district__name">West</a>
         </div>
-      </section>
-      <section class="todo-container section-inline-padding">
-        <h2 class="todo__title">Things to do around</h2>
-        <div class="todo__contents">
-          <div class="todo__contents-left">
-            <p class="todo__content">
-              Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit
-              amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut,
-              dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean
-              at leo tellus. Morbi eu leo sapien.
-            </p>
-            <h3 class="todo_content-title">Activities</h3>
-          </div>
-          <div class="todo__contents-right">
-            <p class="todo__content">
-              Sed a magna semper, porta purus eu, ullamcorper ligula. Nam sit
-              amet consectetur sapien. Etiam dui ipsum, viverra vel turpis ut,
-              dignissim elementum mauris. Sed dapibus auctor scelerisque. Aenean
-              at leo tellus. Morbi eu leo sapien.
-            </p>
-            <h3 class="todo_content-title">Services</h3>
-          </div>
+        <div class="district">
+          <img decoding="async" loading="lazy" src="../assets/images/north.png" alt="" class="district__img" /><a
+            href="#" class="district__name">North</a>
         </div>
-      </section>
-      <section class="districts section-inline-padding">
-        <div class="districts__title-container">
-          <h2 class="districts__title">Our Districts</h2>
-          <small class="districts__sub-title"
-            >Brows locations districtwise</small
-          >
+        <div class="district">
+          <img decoding="async" loading="lazy" src="../assets/images/dhalai.png" alt="" class="district__img" /><a
+            href="#" class="district__name">Dhalai</a>
         </div>
-        <div class="districts__container">
-          <div class="district">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/west.png"
-              alt=""
-              class="district__img"
-            /><a href="#" class="district__name">West</a>
-          </div>
-          <div class="district">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/north.png"
-              alt=""
-              class="district__img"
-            /><a href="#" class="district__name">North</a>
-          </div>
-          <div class="district">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/dhalai.png"
-              alt=""
-              class="district__img"
-            /><a href="#" class="district__name">Dhalai</a>
-          </div>
-          <div class="district">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/gomati.png"
-              alt=""
-              class="district__img"
-            /><a href="#" class="district__name">Gomati</a>
-          </div>
-          <div class="district">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/khowai.png"
-              alt=""
-              class="district__img"
-            /><a href="#" class="district__name">Khowai</a>
-          </div>
-          <div class="district">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/shipahijala.png"
-              alt=""
-              class="district__img"
-            /><a href="#" class="district__name">Shipahijala</a>
-          </div>
-          <div class="district">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/unakoti.png"
-              alt=""
-              class="district__img"
-            /><a href="#" class="district__name">Unakoti</a>
-          </div>
-          <div class="district">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/south.png"
-              alt=""
-              class="district__img"
-            /><a href="#" class="district__name">South</a>
-          </div>
+        <div class="district">
+          <img decoding="async" loading="lazy" src="../assets/images/gomati.png" alt="" class="district__img" /><a
+            href="#" class="district__name">Gomati</a>
         </div>
-      </section>
-      <section class="trips section-inline-padding">
-        <div class="trips__title-container flow-verticle">
-          <h2 class="trips__title">Quick and easy trips across the State</h2>
-          <small class="trips__sub-title"
-            >Pick a location and trip in the lap of nature</small
-          >
+        <div class="district">
+          <img decoding="async" loading="lazy" src="../assets/images/khowai.png" alt="" class="district__img" /><a
+            href="#" class="district__name">Khowai</a>
         </div>
-        <div class="trips__filters">
-          <div class="trips__filter">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/parks-icon.png"
-              alt=""
-              aria-hidden="true"
-              class="trips__filter-icon"
-            />
-            <p class="trips__filter-term">Parks</p>
-          </div>
-          <div class="trips__filter">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/activity-icon.png"
-              alt=""
-              aria-hidden="true"
-              class="trips__filter-icon"
-            />
-            <p class="trips__filter-term">Activity</p>
-          </div>
-          <div class="trips__filter">
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/sanctuary-icon.png"
-              alt=""
-              aria-hidden="true"
-              class="trips__filter-icon"
-            />
-            <p class="trips__filter-term">Sanctuary</p>
-          </div>
+        <div class="district">
+          <img decoding="async" loading="lazy" src="../assets/images/shipahijala.png" alt="" class="district__img" /><a
+            href="#" class="district__name">Shipahijala</a>
         </div>
-        <div class="trips__content-container">
-          <div
-            class="trip__item"
-            style="
+        <div class="district">
+          <img decoding="async" loading="lazy" src="../assets/images/unakoti.png" alt="" class="district__img" /><a
+            href="#" class="district__name">Unakoti</a>
+        </div>
+        <div class="district">
+          <img decoding="async" loading="lazy" src="../assets/images/south.png" alt="" class="district__img" /><a
+            href="#" class="district__name">South</a>
+        </div>
+      </div>
+    </section>
+    <section class="trips section-inline-padding">
+      <div class="trips__title-container flow-verticle">
+        <h2 class="trips__title">Quick and easy trips across the State</h2>
+        <small class="trips__sub-title">Pick a location and trip in the lap of nature</small>
+      </div>
+      <div class="trips__filters">
+        <div class="trips__filter">
+          <img decoding="async" loading="lazy" src="../assets/images/parks-icon.png" alt="" aria-hidden="true"
+            class="trips__filter-icon" />
+          <p class="trips__filter-term">Parks</p>
+        </div>
+        <div class="trips__filter">
+          <img decoding="async" loading="lazy" src="../assets/images/activity-icon.png" alt="" aria-hidden="true"
+            class="trips__filter-icon" />
+          <p class="trips__filter-term">Activity</p>
+        </div>
+        <div class="trips__filter">
+          <img decoding="async" loading="lazy" src="../assets/images/sanctuary-icon.png" alt="" aria-hidden="true"
+            class="trips__filter-icon" />
+          <p class="trips__filter-term">Sanctuary</p>
+        </div>
+      </div>
+      <div class="trips__content-container">
+        <div class="trip__item" style="
               background-image: url(../assets/images/heritage-eco-park.png);
-            "
-          >
-            <h3 class="trip__item-title">Heritage Eco Park</h3>
+            ">
+          <h3 class="trip__item-title">Heritage Eco Park</h3>
+        </div>
+        <div class="trip__item" style="background-image: url(../assets/images/neheru-park.png)">
+          <h3 class="trip__item-title">Neheru Park</h3>
+        </div>
+        <div class="trip__item" style="background-image: url(../assets/images/tepnia-eco-park.png)">
+          <h3 class="trip__item-title">Tepania Eco Park</h3>
+        </div>
+        <div class="trip__item" style="background-image: url(../assets/images/neheru-eco-park.png)">
+          <h3 class="trip__item-title">Neheru Eco Park</h3>
+        </div>
+        <div class="trip__item" style="background-image: url(../assets/images/oxygen-eco-park.png)">
+          <h3 class="trip__item-title">Oxygen Eco Park</h3>
+        </div>
+      </div>
+    </section>
+    <section class="discover-tripura section-inline-padding">
+      <div class="discover-tripura__video">
+        <video src="../assets/discover-tripura-video.mp4" type="video/mp4"
+          poster="../assets/images/discover-video-poster.png" width="100%" height="100%" preload="metadata" muted loop
+          autoplay>
+          Sorry, your browser doesn't support HTML5 video tag.
+        </video>
+      </div>
+      <div class="discover-tripura__contents">
+        <h2 class="discover-tripura__title">
+          Discover Enjoy new places, new Experiences.
+        </h2>
+        <p class="discover-tripura__description">
+          Nunc scelerisque tincidunt elit. Vestibulum non mi ipsum. Cras
+          pretium suscipit tellus sit amet aliquet. Vestibulum maximus lacinia
+          massa non porttitor.
+        </p>
+        <button class="discover-tripura__btn">Book Tickets</button>
+        <div class="discover-tripura__highlights">
+          <div class="discover-tripura__highlight" style="background-image: url(../assets/images/gallery-events.png)">
+            <h3 class="discover-tripura__highlight-title">
+              Gallery and Events
+            </h3>
           </div>
-          <div
-            class="trip__item"
-            style="background-image: url(../assets/images/neheru-park.png)"
-          >
-            <h3 class="trip__item-title">Neheru Park</h3>
-          </div>
-          <div
-            class="trip__item"
-            style="background-image: url(../assets/images/tepnia-eco-park.png)"
-          >
-            <h3 class="trip__item-title">Tepania Eco Park</h3>
-          </div>
-          <div
-            class="trip__item"
-            style="background-image: url(../assets/images/neheru-eco-park.png)"
-          >
-            <h3 class="trip__item-title">Neheru Eco Park</h3>
-          </div>
-          <div
-            class="trip__item"
-            style="background-image: url(../assets/images/oxygen-eco-park.png)"
-          >
-            <h3 class="trip__item-title">Oxygen Eco Park</h3>
+          <div class="discover-tripura__highlight" style="background-image: url(../assets/images/our-stays.png)">
+            <h3 class="discover-tripura__highlight-title">Our<br />Stays</h3>
           </div>
         </div>
-      </section>
-      <section class="discover-tripura section-inline-padding">
-        <div class="discover-tripura__video">
-          <video
-            src="../assets/discover-tripura-video.mp4"
-            type="video/mp4"
-            poster="../assets/images/discover-video-poster.png"
-            width="100%"
-            height="100%"
-            preload="metadata"
-            muted
-            loop
-            autoplay
-          >
-            Sorry, your browser doesn't support HTML5 video tag.
-          </video>
-        </div>
-        <div class="discover-tripura__contents">
-          <h2 class="discover-tripura__title">
-            Discover Enjoy new places, new Experiences.
-          </h2>
-          <p class="discover-tripura__description">
-            Nunc scelerisque tincidunt elit. Vestibulum non mi ipsum. Cras
-            pretium suscipit tellus sit amet aliquet. Vestibulum maximus lacinia
-            massa non porttitor.
-          </p>
-          <button class="discover-tripura__btn">Book Tickets</button>
-          <div class="discover-tripura__highlights">
-            <div
-              class="discover-tripura__highlight"
-              style="background-image: url(../assets/images/gallery-events.png)"
-            >
-              <h3 class="discover-tripura__highlight-title">
-                Gallery and Events
-              </h3>
-            </div>
-            <div
-              class="discover-tripura__highlight"
-              style="background-image: url(../assets/images/our-stays.png)"
-            >
-              <h3 class="discover-tripura__highlight-title">Our<br />Stays</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="home-testimonials section-inline-padding-s">
-        <div class="home-testimonials__container">
-          <h2 class="home-testimonials__title">
-            What <span>you say</span> about us
-          </h2>
-          <div class="home-testimonials__contents">
-            <div class="home-testimonial">
-              <p class="home-testimonial__quote">
-                Nulla eleifend pulvinar purus, molestie euismod odio imperdiet
-                ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
-                interdum, lectus in convallis pulvinar, enim elit porta sapien,
-                vel finibus erat felis sed neque.
-              </p>
-              <p class="home-testimonial__author">Tyler Bailey</p>
-            </div>
-            <div class="home-testimonial">
-              <p class="home-testimonial__quote">
-                Nulla eleifend pulvinar purus, molestie euismod odio imperdiet
-                ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
-                interdum, lectus in convallis pulvinar, enim elit porta sapien,
-                vel finibus erat felis sed neque.
-              </p>
-              <p class="home-testimonial__author">Dorothy Oliver</p>
-            </div>
-            <div class="home-testimonial">
-              <p class="home-testimonial__quote">
-                Nulla eleifend pulvinar purus, molestie euismod odio imperdiet
-                ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
-                interdum, lectus in convallis pulvinar, enim elit porta sapien,
-                vel finibus erat felis sed neque.
-              </p>
-              <p class="home-testimonial__author">Jonathan Freeman</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="cta-section-secondary section-inline-padding-s">
-        <div class="cta-section-secondary__container">
-          <h2 class="cta-section-secondary__title">Get started</h2>
-          <div class="cta-section-secondary__contents">
-            <p class="cta-section-secondary__content">
-              Create your <span>memories</span> today
+      </div>
+    </section>
+    <section class="home-testimonials section-inline-padding-s">
+      <div class="home-testimonials__container">
+        <h2 class="home-testimonials__title">
+          What <span>you say</span> about us
+        </h2>
+        <div class="home-testimonials__contents">
+          <div class="home-testimonial">
+            <p class="home-testimonial__quote">
+              Nulla eleifend pulvinar purus, molestie euismod odio imperdiet
+              ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
+              interdum, lectus in convallis pulvinar, enim elit porta sapien,
+              vel finibus erat felis sed neque.
             </p>
-            <button class="cta-section-secondary__btn">Explore</button>
+            <p class="home-testimonial__author">Tyler Bailey</p>
+          </div>
+          <div class="home-testimonial">
+            <p class="home-testimonial__quote">
+              Nulla eleifend pulvinar purus, molestie euismod odio imperdiet
+              ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
+              interdum, lectus in convallis pulvinar, enim elit porta sapien,
+              vel finibus erat felis sed neque.
+            </p>
+            <p class="home-testimonial__author">Dorothy Oliver</p>
+          </div>
+          <div class="home-testimonial">
+            <p class="home-testimonial__quote">
+              Nulla eleifend pulvinar purus, molestie euismod odio imperdiet
+              ac. Ut sit amet erat nec nibh rhoncus varius in non lorem. Donec
+              interdum, lectus in convallis pulvinar, enim elit porta sapien,
+              vel finibus erat felis sed neque.
+            </p>
+            <p class="home-testimonial__author">Jonathan Freeman</p>
           </div>
         </div>
-      </section>
-      <section class="newsletter section-inline-padding">
-        <div class="newsletter__container">
-          <h2 class="newsletter__title">
-            Subscribe to our Newsletters to know about the Updates.
-          </h2>
-          <form action="" method="post" class="newsletter__input-wrapper">
-            <input
-              type="email"
-              name="email"
-              id="newsletter__email"
-              class="newsletter__email"
-              placeholder="Your Email Address"
-              accesskey="k"
-              autocomplete="email"
-              required
-            />
-            <button
-              type="submit"
-              class="newsletter__email-btn"
-              title="Subscribe to our newsletter"
-            >
-              Subscribe
-            </button>
-          </form>
-        </div>
-        <div class="newsletter__menu-1">
-          <h2 class="newsletter__menu-title">Associated Bodies</h2>
-          <ul class="newsletter__menu-items">
-            <li class="newsletter__menu-item"><a href="#">CAMPA</a></li>
-            <li class="newsletter__menu-item"><a href="#">TFDPC</a></li>
-            <li class="newsletter__menu-item">
-              <a href="#">Tripura Biodiversity Board</a>
-            </li>
-            <li class="newsletter__menu-item">
-              <a href="#">Tripura Scatform Project</a>
-            </li>
-            <li class="newsletter__menu-item">
-              <a href="#">Indo-German Development Cooperation Project</a>
-            </li>
-            <li class="newsletter__menu-item">
-              <a href="#">Tripura JICA Projects</a>
-            </li>
-          </ul>
-        </div>
-        <div class="newsletter__menu-2">
-          <h2 class="newsletter__menu-title">Our Services</h2>
-          <ul class="newsletter__menu-items">
-            <li class="newsletter__menu-item"><a href="#">e-Nursery</a></li>
-            <li class="newsletter__menu-item"><a href="#">Plantations</a></li>
-            <li class="newsletter__menu-item">
-              <a href="#">Riverside Plantation</a>
-            </li>
-            <li class="newsletter__menu-item"><a href="#">Nurseries</a></li>
-            <li class="newsletter__menu-item"><a href="#">E-Tree</a></li>
-            <li class="newsletter__menu-item"><a href="#">Smriti Van</a></li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer id="footer">
-      <div class="footer-main section-inline-padding">
-        <div class="footer-main__top-row">
-          <div class="footer-main__social-icons">
-            <a href="#" class="footer-main__social-link"
-              ><img
-                decoding="async"
-                loading="lazy"
-                src="../assets/images/fb-icon.png"
-                alt=""
-                class="footer-main__social-icon" /></a
-            ><a href="#" class="footer-main__social-link"
-              ><img
-                decoding="async"
-                loading="lazy"
-                src="../assets/images/insta-icon.png"
-                alt=""
-                class="footer-main__social-icon" /></a
-            ><a href="#" class="footer-main__social-link"
-              ><img
-                decoding="async"
-                loading="lazy"
-                src="../assets/images/x-icon.png"
-                alt=""
-                class="footer-main__social-icon"
-            /></a>
-          </div>
-          <div class="footer-main__brand">
-            <div class="footer-main__brand-name-container">
-              <h3 class="footer-main__brand-sub-name">Government of Tripura</h3>
-              <h2 class="footer-main__brand-name">Tripura Forest Department</h2>
-            </div>
-            <img
-              decoding="async"
-              loading="lazy"
-              src="../assets/images/logo.png"
-              alt="Tripura Forest Department"
-              class="footer-main__brand-logo"
-            />
-          </div>
-        </div>
-        <div class="footer-main__menus">
-          <ul class="footer-main__menu">
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">All Parks</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Help Centre</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">News and Updates</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">FAQs</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Contact Us</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">About Us</a>
-            </li>
-          </ul>
-          <ul class="footer-main__menu">
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">All Districts</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">South</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">North</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Shipahijala</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Khowai</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">West</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Unakoti</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Dhalai</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Gomati</a>
-            </li>
-          </ul>
-          <ul class="footer-main__menu">
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">All Activities</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">All Services</a>
-            </li>
-          </ul>
-          <ul class="footer-main__menu">
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Profile</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Tickets</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Settings</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Notifications</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Cookie Policy</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Saved List</a>
-            </li>
-            <li class="footer-main__menu-item">
-              <a href="#" class="footer-main__menu-link">Privacy Policy</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-main__bottom-row"></div>
       </div>
-      <div class="footer-secondary">
-        <div class="footer-secondary__logos">
-          <img
-            decoding="async"
-            loading="lazy"
-            src="../assets/images/master-card-logo.png"
-            alt=""
-            class="footer-secondary__logo"
-          />
-          <img
-            decoding="async"
-            loading="lazy"
-            src="../assets/images/visa-logo.png"
-            alt=""
-            class="footer-secondary__logo"
-          />
-          <img
-            decoding="async"
-            loading="lazy"
-            src="../assets/images/upi-logo.png"
-            alt=""
-            class="footer-secondary__logo"
-          />
-          <img
-            decoding="async"
-            loading="lazy"
-            src="../assets/images/rupay-logo.png"
-            alt=""
-            class="footer-secondary__logo"
-          />
-          <img
-            decoding="async"
-            loading="lazy"
-            src="../assets/images/net-banking.png"
-            alt=""
-            class="footer-secondary__logo"
-          />
+    </section>
+    <section class="cta-section-secondary section-inline-padding-s">
+      <div class="cta-section-secondary__container">
+        <h2 class="cta-section-secondary__title">Get started</h2>
+        <div class="cta-section-secondary__contents">
+          <p class="cta-section-secondary__content">
+            Create your <span>memories</span> today
+          </p>
+          <button class="cta-section-secondary__btn">Explore</button>
         </div>
-        <p class="footer-secondary__copyright">
-          Copyright © Tripura Forest Department
-        </p>
-        <p class="footer-secondary__credit">
-          Developed and Maintained by DIT, Tripura
-        </p>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section class="newsletter section-inline-padding">
+      <div class="newsletter__container">
+        <h2 class="newsletter__title">
+          Subscribe to our Newsletters to know about the Updates.
+        </h2>
+        <form action="" method="post" class="newsletter__input-wrapper">
+          <input type="email" name="email" id="newsletter__email" class="newsletter__email"
+            placeholder="Your Email Address" accesskey="k" autocomplete="email" required />
+          <button type="submit" class="newsletter__email-btn" title="Subscribe to our newsletter">
+            Subscribe
+          </button>
+        </form>
+      </div>
+      <div class="newsletter__menu-1">
+        <h2 class="newsletter__menu-title">Associated Bodies</h2>
+        <ul class="newsletter__menu-items">
+          <li class="newsletter__menu-item"><a href="#">CAMPA</a></li>
+          <li class="newsletter__menu-item"><a href="#">TFDPC</a></li>
+          <li class="newsletter__menu-item">
+            <a href="#">Tripura Biodiversity Board</a>
+          </li>
+          <li class="newsletter__menu-item">
+            <a href="#">Tripura Scatform Project</a>
+          </li>
+          <li class="newsletter__menu-item">
+            <a href="#">Indo-German Development Cooperation Project</a>
+          </li>
+          <li class="newsletter__menu-item">
+            <a href="#">Tripura JICA Projects</a>
+          </li>
+        </ul>
+      </div>
+      <div class="newsletter__menu-2">
+        <h2 class="newsletter__menu-title">Our Services</h2>
+        <ul class="newsletter__menu-items">
+          <li class="newsletter__menu-item"><a href="#">e-Nursery</a></li>
+          <li class="newsletter__menu-item"><a href="#">Plantations</a></li>
+          <li class="newsletter__menu-item">
+            <a href="#">Riverside Plantation</a>
+          </li>
+          <li class="newsletter__menu-item"><a href="#">Nurseries</a></li>
+          <li class="newsletter__menu-item"><a href="#">E-Tree</a></li>
+          <li class="newsletter__menu-item"><a href="#">Smriti Van</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-main section-inline-padding">
+      <div class="footer-main__top-row">
+        <div class="footer-main__social-icons">
+          <a href="#" class="footer-main__social-link"><img decoding="async" loading="lazy"
+              src="../assets/images/fb-icon.png" alt="" class="footer-main__social-icon" /></a><a href="#"
+            class="footer-main__social-link"><img decoding="async" loading="lazy" src="../assets/images/insta-icon.png"
+              alt="" class="footer-main__social-icon" /></a><a href="#" class="footer-main__social-link"><img
+              decoding="async" loading="lazy" src="../assets/images/x-icon.png" alt=""
+              class="footer-main__social-icon" /></a>
+        </div>
+        <div class="footer-main__brand">
+          <div class="footer-main__brand-name-container">
+            <h3 class="footer-main__brand-sub-name">Government of Tripura</h3>
+            <h2 class="footer-main__brand-name">Tripura Forest Department</h2>
+          </div>
+          <img decoding="async" loading="lazy" src="../assets/images/logo.png" alt="Tripura Forest Department"
+            class="footer-main__brand-logo" />
+        </div>
+      </div>
+      <div class="footer-main__menus">
+        <ul class="footer-main__menu">
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">All Parks</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Help Centre</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">News and Updates</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">FAQs</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Contact Us</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">About Us</a>
+          </li>
+        </ul>
+        <ul class="footer-main__menu">
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">All Districts</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">South</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">North</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Shipahijala</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Khowai</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">West</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Unakoti</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Dhalai</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Gomati</a>
+          </li>
+        </ul>
+        <ul class="footer-main__menu">
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">All Activities</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">All Services</a>
+          </li>
+        </ul>
+        <ul class="footer-main__menu">
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Profile</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Tickets</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Settings</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Notifications</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Cookie Policy</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Saved List</a>
+          </li>
+          <li class="footer-main__menu-item">
+            <a href="#" class="footer-main__menu-link">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-main__bottom-row"></div>
+    </div>
+    <div class="footer-secondary">
+      <div class="footer-secondary__logos">
+        <img decoding="async" loading="lazy" src="../assets/images/master-card-logo.png" alt=""
+          class="footer-secondary__logo" />
+        <img decoding="async" loading="lazy" src="../assets/images/visa-logo.png" alt=""
+          class="footer-secondary__logo" />
+        <img decoding="async" loading="lazy" src="../assets/images/upi-logo.png" alt=""
+          class="footer-secondary__logo" />
+        <img decoding="async" loading="lazy" src="../assets/images/rupay-logo.png" alt=""
+          class="footer-secondary__logo" />
+        <img decoding="async" loading="lazy" src="../assets/images/net-banking.png" alt=""
+          class="footer-secondary__logo" />
+      </div>
+      <p class="footer-secondary__copyright">
+        Copyright © Tripura Forest Department
+      </p>
+      <p class="footer-secondary__credit">
+        Developed and Maintained by DIT, Tripura
+      </p>
+    </div>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+
 </html>
