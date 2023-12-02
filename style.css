@@ -149,12 +149,12 @@
   --unnamed-font-size-20: clamp(1.0625rem, 1.025rem + 0.1875vw, 1.25rem);
   --unnamed-font-size-22: clamp(1.125rem, 1.075rem + 0.25vw, 1.375rem);
   --unnamed-font-size-24: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
-  --unnamed-font-size-28: 28px;
+  --unnamed-font-size-28: clamp(1.375rem, 1.3rem + 0.375vw, 1.75rem);
   --unnamed-font-size-34: 34px;
   --unnamed-font-size-48: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
   --unnamed-font-size-60: 60px;
   --unnamed-font-size-96: 96px;
-  --unnamed-font-size-105: 105px;
+  --unnamed-font-size-105: clamp(1.875rem, 0.9375rem + 4.6875vw, 6.5625rem);
   --unnamed-character-spacing-0: 0px;
   --unnamed-character-spacing-nan: NaN;
   --unnamed-line-spacing-13: 13px;
@@ -289,7 +289,7 @@ body {
 }
 
 .section-inline-padding {
-  padding-inline: clamp(0.938rem, -1.475rem + 12.063vw, 13rem);
+  padding-inline: clamp(1rem, -1.4rem + 12vw, 13rem);
 }
 
 .section-inline-padding-s {
@@ -1554,7 +1554,7 @@ body {
 
 /* Park Details */
 .park-details {
-  padding: 0 clamp(0.938rem, 0.425rem + 2.563vw, 3.5rem) 77px 0 !important;
+  padding: 0 clamp(1rem, -3.1667rem + 5.5556vw, 3.5rem) 77px 0 !important;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1564,7 +1564,7 @@ body {
 }
 
 .park-details__image {
-  width: min(800px, 100%);
+  width: clamp(35rem, 11.1667rem + 32.3611vw, 50rem);
   border-bottom-right-radius: 77px;
   height: fit-content;
   overflow: hidden;
@@ -1578,7 +1578,7 @@ body {
 }
 
 .park-details__contents {
-  width: min(872px, 100%);
+  width: clamp(35.8125rem, 4.6667rem + 41.5278vw, 54.5rem);
 }
 
 .park-details__name {
@@ -1660,7 +1660,8 @@ body {
 }
 
 .park-details__cta-date-container {
-  margin-inline: 30px 13px;
+  margin-inline: clamp(0.625rem, 0.375rem + 1.25vw, 1.875rem)
+    clamp(0.625rem, 0.5875rem + 0.1875vw, 0.8125rem);
 }
 
 .park-details__cta-date-container::after {
@@ -1685,7 +1686,7 @@ body {
 }
 
 .park-details__cta-person-container {
-  margin-inline: 16px;
+  margin-inline: clamp(0.625rem, 0.55rem + 0.375vw, 1rem);
 }
 
 .park-details__cta-button {
@@ -1710,7 +1711,10 @@ body {
 
 .park-activities {
   display: grid;
-  grid-template-columns: min(600px, 100%) min(400px, 100%);
+  grid-template-columns: min(600px, clamp(20rem, 16.5rem + 17.5vw, 37.5rem)) min(
+      400px,
+      clamp(20rem, 19rem + 5vw, 25rem)
+    );
   justify-content: space-between;
   align-items: stretch;
   justify-items: stretch;
@@ -1724,7 +1728,7 @@ body {
 }
 
 .park-activities__contents-btn {
-  font-size: 41px;
+  font-size: clamp(1.2813rem, 1.025rem + 1.2813vw, 2.5625rem);
   font-weight: var(--unnamed-font-weight-bold);
   line-height: 1.2em;
   color: #ffffff;
@@ -1772,7 +1776,11 @@ body {
 
 .park-highlights__wrapper {
   display: grid;
-  grid-template-columns: min(744px, 100%) min(592px, 100%);
+  grid-template-columns: clamp(18rem, 12.3rem + 28.5vw, 46.5rem) clamp(
+      18rem,
+      14.2rem + 19vw,
+      37rem
+    );
   align-content: stretch;
   justify-content: space-between;
   align-items: center;
@@ -1883,7 +1891,7 @@ body {
 
 .park-gallery__text-container {
   display: grid;
-  grid-template-columns: min(840px, 100%) min(592px, 100%);
+  grid-template-columns: clamp(15.125rem, 7.65rem + 37.375vw, 52.5rem) auto;
   gap: 2rem;
   align-content: stretch;
   align-items: baseline;
@@ -1892,7 +1900,7 @@ body {
 
 .park-gallery__heading {
   position: relative;
-  font-size: 13.19rem;
+  font-size: clamp(3.75rem, 1.8625rem + 9.4375vw, 13.1875rem);
   font-weight: var(--unnamed-font-weight-bold);
   line-height: 1.2em;
   color: var(---1d1d1f);
@@ -1938,8 +1946,9 @@ body {
   position: absolute;
   left: 70%;
   bottom: 100%;
-  width: 170px;
-  height: 170px;
+  width: clamp(5.625rem, 4.625rem + 5vw, 10.625rem);
+  aspect-ratio: 1 / 1;
+  height: auto;
   border-radius: 50%;
   background: url(/assets/images/gallery-arrow.png) no-repeat center center;
   background-size: cover;
@@ -3749,6 +3758,16 @@ strong {
   display: none;
 }
 
+@media screen and (max-width: 1439px) {
+  .park-highlights__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .park-highlights__main-highlights-container {
+    padding-inline-end: 0;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   .footer-secondary {
     grid-template-columns: repeat(2, 1fr);
@@ -3759,6 +3778,32 @@ strong {
   .footer-secondary__logos {
     grid-area: 1 / 1 / 1 / -1;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .park-details {
+    flex-direction: column;
+    padding: 0 0 77px 0 !important;
+  }
+
+  .park-details > * {
+    width: 100%;
+  }
+
+  .park-details__contents {
+    padding-inline: 1rem;
+  }
+
+  .park-details__text-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .park-activities {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
@@ -3794,6 +3839,26 @@ strong {
   .park-listing__header-sorting:hover .park-listing__header-sorting-drop-dowm {
     transform: translateX(-50%) scaleY(1);
   }
+
+  .park-gallery__text-container {
+    grid-template-columns: 1fr;
+  }
+
+  .park-gallery__text {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .park-details__cta-container {
+    grid-template-columns: 0.43fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .park-details__cta-button {
+    grid-column: 1 / -1;
+    border-bottom-left-radius: 20px;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -3803,6 +3868,18 @@ strong {
 
   .footer-secondary {
     grid-template-columns: 1fr;
+  }
+
+  #main > section > [class*="title-container"],
+  #main > section > * > [class*="title-container"],
+  .park-highlights__main-highlights-title-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-main__menus {
+    flex-direction: column;
   }
 }
 
@@ -3830,10 +3907,16 @@ strong {
     opacity: 0;
     transition: all 150ms ease-in-out;
     will-change: transform, opacity;
+    background: #fff;
+    padding: 0.5em;
   }
 
   .user-image:hover + .user-details {
     transform: translateY(1);
     opacity: 1;
+  }
+
+  .park-details__cta-date-icon {
+    display: none;
   }
 }
