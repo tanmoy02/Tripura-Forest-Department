@@ -9,48 +9,140 @@ document.addEventListener("DOMContentLoaded", () => {
   const parkDropDownList = document.querySelector(
     ".park-selection-dropdown__body-wrapper"
   );
+  const cartDatePicker = document.querySelector(
+    ".cart-details__form-booking-select-date-label"
+  );
+  const cartDatePickerInput = document.querySelector(
+    ".cart-details__form-booking-select-date-input"
+  );
+  const personPicker = document.querySelectorAll(
+    ".cart-details__form-booking-select-person-container > p"
+  );
 
-  parkDropDown.addEventListener("click", (e) => {
-    e.target.classList.toggle("park-selection-active");
-  });
+  const counterModal = document.querySelectorAll(
+    ".cart-details__form-booking-select-person-modal-counter-container > p"
+  );
+  const personConfirmBtn = document.querySelector(
+    ".cart-details__form-booking-select-person-modal-confirm-btn"
+  );
 
-  parkDropDownList.addEventListener("click", (e) => {
-    if (e.target.classList.contains("park-selection-dropdown__body-item")) {
-      parkDropDown.textContent = e.target.textContent;
-      parkDropDown.classList.remove("park-selection-active");
-    }
-  });
+  cartDatePicker &&
+    cartDatePicker.addEventListener("click", (e) => {
+      cartDatePicker.nextElementSibling.showPicker();
+    });
 
-  activityList.forEach((activity) => {
-    const activityName = activity.querySelector(
-      ".cart-details__form-activity-name"
-    ).textContent;
-    const activityPrice = activity.querySelector(
-      ".cart-details__form-activity-rate"
-    ).textContent;
-    const activityInput = activity.querySelector(
-      ".cart-details__form-activity-input"
-    );
-    const activityDecrease = activity.querySelector(
-      ".cart-details__form-activity-input-decrease"
-    );
-    const activityIncrease = activity.querySelector(
-      ".cart-details__form-activity-input-increase"
-    );
+  parkDropDown &&
+    parkDropDown.addEventListener("click", (e) => {
+      e.target.classList.toggle("park-selection-active");
+    });
 
-    activity.addEventListener("click", (e) => {
-      e.preventDefault();
-      if (e.target === activityDecrease) {
-        decrease(activityInput, activity);
-        addAddOn(activityInput, activityName, activityPrice);
-        calculate();
-      } else if (e.target === activityIncrease) {
-        increase(activityInput, activity);
-        addAddOn(activityInput, activityName, activityPrice);
-        calculate();
+  cartDatePickerInput &&
+    cartDatePickerInput.addEventListener("input", (e) => {
+      const selectedDate = formatDate(e.target.value);
+      cartDatePicker.textContent = selectedDate;
+    });
+
+  parkDropDownList &&
+    parkDropDownList.addEventListener("click", (e) => {
+      if (e.target.classList.contains("park-selection-dropdown__body-item")) {
+        parkDropDown.textContent = e.target.textContent;
+        parkDropDown.classList.remove("park-selection-active");
       }
     });
-  });
+
+  personPicker &&
+    personPicker.forEach((person) => {
+      person.addEventListener("click", (e) => {
+        document
+          .querySelector(".cart-details__form-booking-select-person-modal")
+          .classList.toggle("active");
+      });
+    });
+
+  counterModal &&
+    counterModal.forEach((counter) => {
+      counter.addEventListener("click", (e) => {
+        if (
+          e.target.classList.contains(
+            "cart-details__form-booking-select-person-modal-counter-decrese"
+          )
+        ) {
+          const parentElem = e.target.parentElement;
+          const valueField = parentElem.querySelector(
+            ".cart-details__form-booking-select-person-modal-counter-value"
+          );
+          let value = parseInt(valueField.textContent);
+
+          value = Math.max(0, value - 1);
+          valueField.textContent = value;
+        } else if (
+          e.target.classList.contains(
+            "cart-details__form-booking-select-person-modal-counter-increse"
+          )
+        ) {
+          const parentElem = e.target.parentElement;
+          const valueField = parentElem.querySelector(
+            ".cart-details__form-booking-select-person-modal-counter-value"
+          );
+          let value = parseInt(valueField.textContent);
+
+          value += 1;
+          valueField.textContent = value;
+        }
+      });
+    });
+
+  personConfirmBtn &&
+    personConfirmBtn.addEventListener("click", (e) => {
+      const adultValue = document.querySelector(
+        ".cart-details__form-booking-select-person-modal-counter-container.adult .cart-details__form-booking-select-person-modal-counter-value"
+      ).textContent;
+      const childValue = document.querySelector(
+        ".cart-details__form-booking-select-person-modal-counter-container.child .cart-details__form-booking-select-person-modal-counter-value"
+      ).textContent;
+
+      document.querySelector(
+        ".cart-details__form-booking-select-person-adult-no"
+      ).textContent = adultValue;
+      document.querySelector(
+        ".cart-details__form-booking-select-person-child-no"
+      ).textContent = childValue;
+      document
+        .querySelector(".cart-details__form-booking-select-person-modal")
+        .classList.toggle("active");
+    });
+
+  activityList &&
+    activityList.forEach((activity) => {
+      const activityName = activity.querySelector(
+        ".cart-details__form-activity-name"
+      ).textContent;
+      const activityPrice = activity.querySelector(
+        ".cart-details__form-activity-rate"
+      ).textContent;
+      const activityInput = activity.querySelector(
+        ".cart-details__form-activity-input"
+      );
+      const activityDecrease = activity.querySelector(
+        ".cart-details__form-activity-input-decrease"
+      );
+      const activityIncrease = activity.querySelector(
+        ".cart-details__form-activity-input-increase"
+      );
+
+      activity.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (e.target === activityDecrease) {
+          decrease(activityInput, activity);
+          addAddOn(activityInput, activityName, activityPrice);
+          calculate();
+        } else if (e.target === activityIncrease) {
+          increase(activityInput, activity);
+          addAddOn(activityInput, activityName, activityPrice);
+          calculate();
+        }
+      });
+    });
 
   if (addOnContainer) {
     calculate();
@@ -203,4 +295,12 @@ const calculate = () => {
     totalCost % 1 === 0 ? totalCost.toFixed(0) : totalCost.toFixed(2);
 
   total.innerText = formattedTotalCost;
+};
+
+const formatDate = (value) => {
+  let date = new Date(value);
+  const day = date.toLocaleString("default", { day: "2-digit" });
+  const month = date.toLocaleString("default", { month: "short" });
+  const year = date.toLocaleString("default", { year: "2-digit" });
+  return day + " " + month + " " + year;
 };
