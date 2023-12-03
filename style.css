@@ -2627,7 +2627,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  padding-block: 96px 236px !important;
+  padding-block: 96px clamp(9.375rem, 8.3rem + 5.375vw, 14.75rem) !important;
 }
 
 .gallery-park__img-link {
