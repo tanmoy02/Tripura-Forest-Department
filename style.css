@@ -3701,7 +3701,7 @@ strong {
 
 .booking-success__card-footer > img,
 .booking-failed__card-footer > img {
-  max-height: 19px;
+  max-height: clamp(0.75rem, -0.125rem + 4.375vw, 1.1875rem);
 }
 
 .booking-success-page .cart-details__summary-payable,
@@ -3916,6 +3916,19 @@ strong {
 
   .cart-details__summary-details-container > *:nth-last-child(-n + 2) {
     gap: clamp(1.625rem, 0.375rem + 6.25vw, 2.25rem);
+  }
+
+  .booking-success__anim {
+    margin-inline: auto;
+  }
+
+  .cart-details__summary-payable {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 0;
+  }
+
+  .booking-success__summary-details {
+    margin-inline-start: 0;
   }
 }
 
