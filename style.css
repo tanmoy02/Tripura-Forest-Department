@@ -2596,7 +2596,8 @@ body {
 }
 
 .cart-footer__progress-lebel-img,
-.cart-footer__progress-lebel-img-complete {
+.cart-footer__progress-lebel-img-complete,
+.cart-footer__progress-lebel-img-failed {
   max-width: clamp(1rem, 0.9375rem + 0.3125vw, 1.3125rem);
   aspect-ratio: 1 / 1;
 }
