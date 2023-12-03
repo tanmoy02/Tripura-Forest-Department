@@ -2598,6 +2598,7 @@ body {
 .cart-footer__progress-lebel-img,
 .cart-footer__progress-lebel-img-complete {
   max-width: clamp(1rem, 0.9375rem + 0.3125vw, 1.3125rem);
+  aspect-ratio: 1 / 1;
 }
 
 .cart-footer__progress-lebel-img {
@@ -2720,7 +2721,7 @@ body {
   align-items: center;
   justify-content: space-between;
   align-content: stretch;
-  padding: 30px 55px;
+  padding: 30px clamp(1.875rem, 1.5625rem + 1.5625vw, 3.4375rem);
   border-radius: 26px;
   border: 2px solid var(---f2b203);
   gap: 1rem;
@@ -2908,7 +2909,7 @@ input[type="number"]::-moz-appearance:textfield {
 }
 
 .cart-details__summary-payable > *:not(.booking-success__summary-details) {
-  padding: 16px 35px;
+  padding: 16px clamp(1rem, 0.7625rem + 1.1875vw, 2.1875rem);
   background: var(---395144);
 }
 
@@ -3899,6 +3900,12 @@ strong {
 
   .cart-footer__progress-lebel-wrapper {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 522px) {
+  .cart-details__form-addon {
+    text-align: left;
   }
 }
 
