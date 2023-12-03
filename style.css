@@ -150,7 +150,7 @@
   --unnamed-font-size-22: clamp(1.125rem, 1.075rem + 0.25vw, 1.375rem);
   --unnamed-font-size-24: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
   --unnamed-font-size-28: clamp(1.375rem, 1.3rem + 0.375vw, 1.75rem);
-  --unnamed-font-size-34: 34px;
+  --unnamed-font-size-34: clamp(1.4375rem, 1.3rem + 0.6875vw, 2.125rem);
   --unnamed-font-size-48: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
   --unnamed-font-size-60: 60px;
   --unnamed-font-size-96: 96px;
@@ -3088,8 +3088,10 @@ strong {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
+  gap: 1rem;
   padding-block-end: 1.125rem;
   border-block-end: 1px solid var(---395144);
+  position: relative;
 }
 
 .booking-history__header-title {
@@ -3106,7 +3108,7 @@ strong {
   justify-items: center;
   align-items: baseline;
   align-content: stretch;
-  gap: 2rem;
+  gap: clamp(1rem, 0.8rem + 1vw, 2rem);
   font-size: 1rem;
   line-height: 1.625em;
   color: var(---1d1d1f);
@@ -3288,7 +3290,8 @@ strong {
 .booking-history__upcoming-item,
 .booking-history__completed-item {
   background: var(---ebeae4);
-  padding: 32px 63px 28px 44px;
+  padding: 32px clamp(1.875rem, -2.25rem + 20.625vw, 3.9375rem) 28px
+    clamp(1.25rem, -1.25rem + 12.5vw, 2.5rem);
   border: 2px solid var(---f2b203);
   border-radius: 40px;
   cursor: pointer;
@@ -3301,7 +3304,7 @@ strong {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 33px;
+  font-size: clamp(1.4375rem, 1.3125rem + 0.625vw, 2.0625rem);
   color: var(---262626);
   line-height: 1.5em;
   position: relative;
@@ -3311,7 +3314,7 @@ strong {
 .booking-history__completed-item-name {
   font-family: var(--font-family-pp-eiko);
   font-weight: 100;
-  font-size: 22px;
+  font-size: clamp(1.125rem, 1.075rem + 0.25vw, 1.375rem);
   transition: all 150ms ease-in-out;
 }
 
@@ -3392,7 +3395,7 @@ strong {
 
 .booking-history__upcoming-item-view-ticket-main,
 .booking-history__completed-item-view-ticket-main {
-  font-size: 31px;
+  font-size: clamp(1.4375rem, 1.3375rem + 0.5vw, 1.9375rem);
   font-weight: var(--unnamed-font-weight-bold);
   line-height: 1.2em;
   color: var(---262626);
@@ -3448,7 +3451,7 @@ strong {
 
 .booking-history__upcoming-item:hover .booking-history__upcoming-item-name,
 .booking-history__completed-item:hover .booking-history__completed-item-name {
-  font-size: 33px;
+  font-size: clamp(1.4375rem, 1.3125rem + 0.625vw, 2.0625rem);
 }
 
 .booking-history__completed-item {
@@ -3466,7 +3469,7 @@ strong {
 }
 
 .booking-history-page #footer {
-  padding-block-start: 340px;
+  padding-block-start: clamp(7.5rem, 4.75rem + 13.75vw, 21.25rem);
 }
 
 /* Park Listing Page */
@@ -3930,6 +3933,14 @@ strong {
 
   .booking-success__summary-details {
     margin-inline-start: 0;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .booking-history__header-sorting {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
